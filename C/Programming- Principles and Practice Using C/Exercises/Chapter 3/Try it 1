@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+#include <clocale>
+
+using namespace std;
+
+
+int main()
+{
+	setlocale(LC_ALL, "russian");
+
+	cout << "Пожалуйста, введить значение с плавающей точкой: ";
+	int n;
+	cin >> n;
+	cout << "n == " << n
+		<< "\nтри раза по n == " << 3 * n
+		<< "\nдва раза по n == " << n + n
+		<< "\nn в квадрате == " << n * n
+		<< "\nполовина n == " << n / 2 << endl;
+	double n1 = n;
+	cout << "\nкорень квадратный из n == " << sqrt(n1)
+		<< "\nостаток от деления на 2 == " << n % 2
+		<< "\n"; // переход на новую строку
+
+
+	system("pause");
+	return 0;
