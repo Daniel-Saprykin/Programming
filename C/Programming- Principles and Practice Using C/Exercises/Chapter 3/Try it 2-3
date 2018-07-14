@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+#include <clocale>
+
+using namespace std;
+
+
+int main()
+{
+	setlocale(LC_ALL, "russian");
+
+	string previous = " ";
+	string current;
+	while (cin >> current)
+	{
+		if (previous == current)
+		{
+			cout << "Повторяющееся слово: " << current << '\n';
+		}
+		previous = current;
+	}
+
+
+	system("pause");
+	return 0;
+}
