@@ -16,8 +16,8 @@ int main()
 {
 	setlocale(LC_ALL, "russian");
 
-
-	vector<string> taboo{ "broccoli","aple","orange","work" };
+	// вектор хранящий запрещенные слова
+	vector<string> taboo{ "broccoli","apple","orange","work" };
 
 	vector<string> word{};
 	for (string temp; cin >> temp;)
