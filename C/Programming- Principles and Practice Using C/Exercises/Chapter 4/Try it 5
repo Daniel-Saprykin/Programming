@@ -1,0 +1,43 @@
+// Реализуйте функцию square() не используя оператор умножения; иначе говоря. выполните умножение х*х с помощью 
+// повторяющегося сложения (начните с переменной. равной нулю, и х раз добавьте к нейчисло х). 
+// Затем выполните версию "первопрограммы". используя функциюsquare ().
+
+
+#include <iostream>
+#include <clocale>
+
+using namespace std;
+
+
+int foo(int a)
+{
+	int sum = 0;
+	for (int i = 0; i < a; i++)
+	{
+		sum += a;
+	}
+	return sum;
+}
+
+int square(int a)
+{
+	return a * a;
+}
+
+int main()
+{
+	setlocale(LC_ALL, "russian");
+
+	int val2 = 0, val = 0;
+	cin >> val;
+	val2 = val;
+
+	val = foo(val);
+	val2 = square(val2);
+  
+	cout << val << endl;
+	cout << val2 << endl;
+	
+	system("pause");
+	return 0;
+}
