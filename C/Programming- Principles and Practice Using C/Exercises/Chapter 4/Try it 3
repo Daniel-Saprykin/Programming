@@ -1,0 +1,24 @@
+//Символ 'Ь' равен char('a'+l) , ' с ' равен char('a'+2) и т.д. Используя цикл, 
+выведите на экран таблицу символов и соответствующих им целочисленных значений
+
+#include <iostream>
+#include <clocale>
+
+
+using namespace std;
+
+
+int main()
+{
+	setlocale(LC_ALL, "russian");
+
+	double val1 = 0;
+	char currency  = 'a';
+
+	cin >> val1;
+
+	for (int i = 0; i < val1; i++) cout << char('a' + i) << endl;
+	
+	system("pause");
+	return 0;
+}
