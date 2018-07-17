@@ -15,7 +15,7 @@ int main()
 	setlocale(LC_ALL, "Russian");
 
 	vector<string> vecstr{ "zero","one","two","three","four",
-						   "five","six","seven","eight","nine", };
+			       "five","six","seven","eight","nine" };
 
 	vector<string> vecval{ "0","1","2","3","4","5","6","7","8","9" };
 
