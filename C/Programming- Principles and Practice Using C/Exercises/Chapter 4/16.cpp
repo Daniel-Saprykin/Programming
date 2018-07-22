@@ -23,6 +23,7 @@ int main()
 
 	sort(vec.begin(), vec.end());
 
+	//подсчитываем количество чисел, добавляем их количество и сами цисла в вектор
 	for (int i = 0; i < vec.size(); i++)
 	{
 		temp = vec[i];
@@ -44,13 +45,16 @@ int main()
 		
 		if (temp != temp2)
 		{
-			vec_mode.push_back(temp);
-			value.push_back(count);
+			vec_mode.push_back(temp); //вектор хранит цисла
+			value.push_back(count); //вектор хранит количество повторений
 		}
 		count = 0;
 	}
 
-
+	
+	
+	//находим наибольшее значение в векторе
+	// это и будет наша мода
 	int max = vec[0];
 	int count2 = 0;
 	for (int i = 0; i < value.size(); i++)
@@ -63,7 +67,7 @@ int main()
 		
 	}
 
-
+	
 	cout << "MODA: " << vec_mode[count2 -1] << '\t' << "counter: " << value[count2 -1] << endl;
 
 
