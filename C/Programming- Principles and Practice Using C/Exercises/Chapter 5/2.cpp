@@ -9,8 +9,8 @@ using namespace std;
 
  double ctok (double c )
  {
-     double k = c + 273.15;
-     return k;
+     int k = c + 273.15; // усечение данных
+     return int; // возвращаем целоцисленный тип данных, а должны возвращать переменную k
  }
 
 int main()
@@ -18,11 +18,10 @@ int main()
     setlocale(LC_ALL,"rus");
 
     double c = 0;
-    double k = 0;
     cin >> c;
-    k = ctok(c);
+    double k = ctok("c"); // передаем в качестве аргумента строку, должны передавать переменную c
 
-    cout << k << endl;
+    Cout << k << endl; // синтаксическая ошибка: cout
 
 
     system("pause");
