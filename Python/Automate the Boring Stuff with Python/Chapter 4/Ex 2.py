@@ -14,5 +14,5 @@ Colomn = len(grid[1])
 
 for i in range(Colomn):
     for j in range(row):
-       print(grid[j][i])
+       print(grid[j][i], end=' ')
     print()
